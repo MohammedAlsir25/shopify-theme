@@ -2,7 +2,7 @@
 
 A clean, responsive, and modern Shopify theme built with Liquid, SCSS, and JavaScript. Designed for fast performance, great UX, and easy customization.
 
-![Theme Preview](./assets/theme-preview.png)
+![Theme Preview](https://placehold.co/1200x600/png?text=Modern+Shopify+Theme+Preview)
 
 ## Features
 
