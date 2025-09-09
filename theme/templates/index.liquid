@@ -1,0 +1,17 @@
+<section class="hero">
+  <img src="{{ 'hero-image.jpg' | asset_url }}" alt="Hero Image" />
+  <div class="hero-text">
+    <h1>Welcome to {{ shop.name }}</h1>
+    <p>Discover our latest products</p>
+    <a href="/collections/all" class="btn btn-primary">Shop Now</a>
+  </div>
+</section>
+
+<section class="featured-products container">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    {% for product in collections.frontpage.products %}
+      {% include 'product-card' with product %}
+    {% endfor %}
+  </div>
+</section>

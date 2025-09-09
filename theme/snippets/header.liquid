@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="container">
+    <a href="{{ shop.url }}" class="logo">
+      <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" />
+    </a>
+    <nav class="site-nav">
+      <ul>
+        {% for link in linklists.main-menu.links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <a href="/cart" class="cart-link" aria-label="Cart">
+      🛒 <span class="cart-count">{{ cart.item_count }}</span>
+    </a>
+    <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
